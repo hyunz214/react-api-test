@@ -25,14 +25,14 @@ const loadingState = {
 
 // 성공시 상태
 const success = data => ({
-    loading: fasle,
+    loading: false,
     data,
     error: null,
 });
 
 // 에러시 상태
 const error = e => ({
-    loading: fasle,
+    loading: false,
     data: null,
     error: e,
 });
