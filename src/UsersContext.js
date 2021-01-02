@@ -133,7 +133,7 @@ export async function getUsers(dispatch){
     }
     
 }
-export async function getuUer(dispatch, id){
+export async function getUser(dispatch, id){
     dispatch({ type : 'GET_USER'});
     try{
         const response = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`);
