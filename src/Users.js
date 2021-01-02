@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import useAsync from './useAsync';
 import User from './User';
@@ -8,11 +8,11 @@ async function getUsers() {
     return response.data;
 }
 
-
 function Users() {
     const [state, refetch] = useAsync(getUsers, [], true);
     const [userId, setUserId] = useState(null);
-    const {loading, data : users, error} = state;
+    
+    const {loading, data: users, error} = state;
 
 
     if (loading) return <div> 로딩중..</div>
