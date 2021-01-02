@@ -30,15 +30,16 @@ function Users01() {
     if (error) return <div> 에러발생..</div>
     if (!users) return null;
 
-    return <ul>
-        {users.map(user => <li key={user.id}>
-            {user.username} ({user.name})
-
-        </li>)}
-
-
-    </ul>;
-
+    return (
+        <>
+            <ul>
+                {users.map(user => <li key={user.id}>
+                    {user.username} ({user.name})
+                </li>)}
+            </ul>
+            <button onClick={fetchUsers}></button>
+        </>
+    );
 }
 
-export default Users;
+export default Users01;
