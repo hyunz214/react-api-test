@@ -21,6 +21,8 @@ function User({ id }) {
             <h2>{user.username}</h2>
             <p>
                 <b>Email : </b> {user.email}
+                <b>Email : </b> {user.email}
+                <b>Email : </b> {user.email}
             </p>
         </div>
     );
